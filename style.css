@@ -1,0 +1,72 @@
+/* #f44336 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.form,
+.tasks {
+  width: 600px;
+  max-width: 100%;
+  display: flex;
+  gap: 15px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #eee;
+}
+.tasks {
+  flex-direction: column;
+}
+.form .text {
+  flex: 1 2 40px;
+  border: none;
+  background-color: #fdfdfd;
+  border-radius: 5px;
+  padding: 10px;
+}
+.form .text:focus {
+  outline: none;
+}
+.form .add {
+  background-color: #f44336;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.tasks > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #fdfdfd;
+  padding: 15px;
+  border-radius: 5px;
+}
+.tasks .task span {
+  text-transform: capitalize;
+  font-size: 14px;
+}
+.tasks .btn {
+  padding: 4px 10px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+.form .add:hover,
+.tasks .btn:hover {
+  background-color: #cc2c20;
+}
